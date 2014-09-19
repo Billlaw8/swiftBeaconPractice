@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04489B819CC813D004D8D77 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04489B719CC813D004D8D77 /* Beacon.swift */; };
 		B0F0D57319CBA77C00A8EA91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D57219CBA77C00A8EA91 /* AppDelegate.swift */; };
 		B0F0D57619CBA77C00A8EA91 /* BeaconQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D57419CBA77C00A8EA91 /* BeaconQuotes.xcdatamodeld */; };
-		B0F0D57819CBA77C00A8EA91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D57719CBA77C00A8EA91 /* ViewController.swift */; };
+		B0F0D57819CBA77C00A8EA91 /* BQEnterUUIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D57719CBA77C00A8EA91 /* BQEnterUUIDViewController.swift */; };
 		B0F0D57B19CBA77C00A8EA91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F0D57919CBA77C00A8EA91 /* Main.storyboard */; };
 		B0F0D57D19CBA77C00A8EA91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F0D57C19CBA77C00A8EA91 /* Images.xcassets */; };
 		B0F0D58019CBA77C00A8EA91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0D57E19CBA77C00A8EA91 /* LaunchScreen.xib */; };
 		B0F0D58C19CBA77C00A8EA91 /* BeaconQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D58B19CBA77C00A8EA91 /* BeaconQuotesTests.swift */; };
+		B0F0D59619CBA81A00A8EA91 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F0D59519CBA81A00A8EA91 /* CoreLocation.framework */; };
+		B0F0D59A19CBACB700A8EA91 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D59919CBACB700A8EA91 /* BeaconManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B04489B719CC813D004D8D77 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		B0F0D56D19CBA77C00A8EA91 /* BeaconQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F0D57119CBA77C00A8EA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F0D57219CBA77C00A8EA91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F0D57519CBA77C00A8EA91 /* BeaconQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconQuotes.xcdatamodel; sourceTree = "<group>"; };
-		B0F0D57719CBA77C00A8EA91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0F0D57719CBA77C00A8EA91 /* BQEnterUUIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQEnterUUIDViewController.swift; sourceTree = "<group>"; };
 		B0F0D57A19CBA77C00A8EA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0F0D57C19CBA77C00A8EA91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0F0D57F19CBA77C00A8EA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0F0D58519CBA77C00A8EA91 /* BeaconQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F0D58A19CBA77C00A8EA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F0D58B19CBA77C00A8EA91 /* BeaconQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconQuotesTests.swift; sourceTree = "<group>"; };
+		B0F0D59519CBA81A00A8EA91 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0F0D59919CBACB700A8EA91 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F0D59619CBA81A00A8EA91 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,7 @@
 		B0F0D56419CBA77C00A8EA91 = {
 			isa = PBXGroup;
 			children = (
+				B0F0D59519CBA81A00A8EA91 /* CoreLocation.framework */,
 				B0F0D56F19CBA77C00A8EA91 /* BeaconQuotes */,
 				B0F0D58819CBA77C00A8EA91 /* BeaconQuotesTests */,
 				B0F0D56E19CBA77C00A8EA91 /* Products */,
@@ -79,12 +87,14 @@
 		B0F0D56F19CBA77C00A8EA91 /* BeaconQuotes */ = {
 			isa = PBXGroup;
 			children = (
-				B0F0D57219CBA77C00A8EA91 /* AppDelegate.swift */,
-				B0F0D57719CBA77C00A8EA91 /* ViewController.swift */,
 				B0F0D57919CBA77C00A8EA91 /* Main.storyboard */,
+				B0F0D57219CBA77C00A8EA91 /* AppDelegate.swift */,
+				B0F0D57719CBA77C00A8EA91 /* BQEnterUUIDViewController.swift */,
+				B0F0D59919CBACB700A8EA91 /* BeaconManager.swift */,
+				B0F0D57419CBA77C00A8EA91 /* BeaconQuotes.xcdatamodeld */,
+				B04489B719CC813D004D8D77 /* Beacon.swift */,
 				B0F0D57C19CBA77C00A8EA91 /* Images.xcassets */,
 				B0F0D57E19CBA77C00A8EA91 /* LaunchScreen.xib */,
-				B0F0D57419CBA77C00A8EA91 /* BeaconQuotes.xcdatamodeld */,
 				B0F0D57019CBA77C00A8EA91 /* Supporting Files */,
 			);
 			path = BeaconQuotes;
@@ -215,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F0D57819CBA77C00A8EA91 /* ViewController.swift in Sources */,
+				B0F0D57819CBA77C00A8EA91 /* BQEnterUUIDViewController.swift in Sources */,
 				B0F0D57619CBA77C00A8EA91 /* BeaconQuotes.xcdatamodeld in Sources */,
+				B04489B819CC813D004D8D77 /* Beacon.swift in Sources */,
 				B0F0D57319CBA77C00A8EA91 /* AppDelegate.swift in Sources */,
+				B0F0D59A19CBACB700A8EA91 /* BeaconManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				B0F0D59119CBA77C00A8EA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0F0D59219CBA77C00A8EA91 /* Build configuration list for PBXNativeTarget "BeaconQuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				B0F0D59419CBA77C00A8EA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
